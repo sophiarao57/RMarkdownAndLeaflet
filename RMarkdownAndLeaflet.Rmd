@@ -1,0 +1,13 @@
+---
+title: "R Markdown and Leaflet"
+output: html_document
+---
+
+# March 25, 2024
+
+```{r}
+library(leaflet)
+my_map <- leaflet() %>% addTiles() 
+my_map <- my_map %>% addMarkers(lat=41.890251, lng= 12.492373, popup="The Colosseum")
+my_map
+```
